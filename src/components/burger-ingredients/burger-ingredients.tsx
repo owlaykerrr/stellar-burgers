@@ -7,7 +7,7 @@ import { useSelector } from '../../services/store';
 import {
   getIngredientsSelector,
   getLoadingStatus
-} from '../../services/slices/IngridientsSlice';
+} from '../../services/slices/IngredientsSlice';
 import { Preloader } from '../../components/ui';
 
 export const BurgerIngredients: FC = () => {
