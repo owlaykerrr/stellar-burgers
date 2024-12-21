@@ -2,18 +2,9 @@ import {
   getFeedData,
   TStateFeed,
   feedDataSlice,
-  getOrderByNumber
+  getOrderByNumber,
+  initialState
 } from './FeedDataSlice';
-
-// Начальное состояние
-const initialState: TStateFeed = {
-  orders: [],
-  total: 0,
-  totalToday: 0,
-  error: null,
-  loading: false,
-  modalOrder: null
-};
 
 //Тестовые данные заказов для использования в тестах, в глобальной переменной для общего доступа
 const testOrders = {

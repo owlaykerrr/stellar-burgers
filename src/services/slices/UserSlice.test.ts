@@ -5,16 +5,9 @@ import {
   logOutUser,
   updateUser,
   userSlice,
-  setUserCheck
+  setUserCheck,
+  initialState
 } from './UserSlice';
-
-const initialState: TStateUser = {
-  userCheck: false,
-  isAuthenticated: false,
-  user: null,
-  loginUserError: null,
-  loginUserRequest: false
-};
 
 const testUser = {
   success: true,

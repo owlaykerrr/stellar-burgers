@@ -2,17 +2,10 @@
 
 import {
   TStateOrdersHistory,
+  initialState,
   ordersHistory,
   userOrdersHistorySlice
-} from './UserOrdersHistory';
-
-// Начальное состояние для тестов
-
-const initialState: TStateOrdersHistory = {
-  orders: [],
-  loading: false,
-  error: null
-};
+} from './UserOrdersHistorySlice';
 
 //Тестовые данные заказов для использования в тестах
 const testOrders = {

@@ -4,7 +4,8 @@ import burgerConstructorSlice, {
   removeIngredient,
   moveUpIngredient,
   moveDownIngredient,
-  clearOrder
+  clearOrder,
+  initialState
 } from './BurgerConstructorSlice';
 
 describe('burgerConstructor slice tests ', () => {
@@ -55,17 +56,6 @@ describe('burgerConstructor slice tests ', () => {
 
   //тест добавление ингредиента в конструктор
   test('addIngredient constructor test - ingredients', () => {
-    const initialState = {
-      constructorItems: {
-        bun: null,
-        ingredients: []
-      },
-      orderRequest: false,
-      orderModalData: null,
-      loading: false,
-      error: null
-    };
-
     const newState = burgerConstructorSlice.reducer(
       initialState,
       addIngredient(ingredient_1)
@@ -80,17 +70,6 @@ describe('burgerConstructor slice tests ', () => {
 
   //тест добавления булки в конструктор
   test('addIngredient constructor test - buns', () => {
-    const initialState = {
-      constructorItems: {
-        bun: null,
-        ingredients: []
-      },
-      orderRequest: false,
-      orderModalData: null,
-      loading: false,
-      error: null
-    };
-
     const newState = burgerConstructorSlice.reducer(
       initialState,
       addIngredient(bun)

@@ -1,14 +1,8 @@
 import ingredientsSlice, {
   getIngredients,
+  initialState,
   TStateIngredients
 } from './IngredientsSlice';
-
-//начальное состояние
-const initialState: TStateIngredients = {
-  ingredients: [],
-  loading: false,
-  error: null
-};
 
 //тестовый ингредиент
 const testIngredient = [
