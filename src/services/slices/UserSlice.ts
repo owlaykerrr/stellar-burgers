@@ -18,7 +18,7 @@ export type TStateUser = {
   loginUserRequest: boolean;
 };
 
-const initialState: TStateUser = {
+export const initialState: TStateUser = {
   user: null,
   isAuthenticated: false,
   userCheck: false,

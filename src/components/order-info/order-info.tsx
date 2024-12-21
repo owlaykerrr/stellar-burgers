@@ -9,7 +9,7 @@ import {
   getFeedOrders,
   getOrderByNumber
 } from '../../services/slices/FeedDataSlice';
-import { getIngredientsSelector } from '../../services/slices/IngridientsSlice';
+import { getIngredientsSelector } from '../../services/slices/IngredientsSlice';
 
 export const OrderInfo: FC = () => {
   /** TODO: взять переменные orderData и ingredients из стора */

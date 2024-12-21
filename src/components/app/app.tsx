@@ -17,7 +17,7 @@ import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { ProtectedRoute } from '../protected-routes/protected-routes';
 import { useEffect } from 'react';
 import { useDispatch } from '../../services/store';
-import { getIngredients } from '../../services/slices/IngridientsSlice';
+import { getIngredients } from '../../services/slices/IngredientsSlice';
 import { checkUserAuth } from '../../services/slices/UserSlice';
 
 const App = () => {
@@ -71,14 +71,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        <Route
-          path='/reset-password'
-          element={
-            <ProtectedRoute>
-              <ResetPassword />
-            </ProtectedRoute>
-          }
-        />
+        <Route path='/reset-password' element={<ResetPassword />} />
         <Route
           path='/profile'
           element={
